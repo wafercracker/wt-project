@@ -1,6 +1,10 @@
 # wt-project
 our webtech project for 3rd sem . . .very minimal but gets the job done
-{BTW I LOVE HOW GITHUB TELLS THE % OF LANGUAGES USED}
+
+
+
+
+
 
 
 install node js
