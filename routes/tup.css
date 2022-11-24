@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url("/img/bg1.webp") no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
+    margin: 10px 0;
+}
+
+#logo img{
+    cursor: pointer;
+    border-radius: 200px;
+    max-width: 40%;
+}
+
+#ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    list-style: none;
+}
+
+.item a{
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.item a:hover{
+    /* border-radius: 30px; */
+    color: #f9ba2d;
+    transition: all 1s ease;
+}
+
+#home{
+    font-family: 'Rubik', sans-serif;
+    height: 700px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f9ba2d;
+}
+
+#home::before{
+    content: "";
+    background: url(/img/bg1.webp) no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.hr{
+    background-color: rgb(39, 39, 39);
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+    width: 1.5%;
+    padding: 4px;
+}
+
+.center{
+    /* margin-top: 2%; */
+    text-align: center;
+}
+
+.author{
+    margin-left: 19%;
+    text-align: right;
+    color: rgb(226, 226, 226);
+}
+
+#sports{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.display{
+    visibility: hidden;
+}
+
+.sprts{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid black;    
+    max-width: 35%;
+    height: 300px;
+    padding: 0 10px;
+}
+
+.badminton{
+    background: rgba(0, 0, 0, 0.7) url(/img/bgimg1.png) no-repeat center center/cover;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.football{
+    background: url(/img/ftball.jpg) no-repeat center center/cover;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cricket{
+    background: url(/img/cket.jpg) no-repeat center center/cover;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zumba{
+    color: white;
+    background: rgba(0, 0, 0, 0.7) url(/img/zumba5.jpg) no-repeat center center/cover;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sprts h1{
+    margin: 0 40%;
+    margin-bottom: 3%;
+    border-bottom: 2px dotted white;
+}
+
+.zumba h1{
+    margin: 0 30%;
+    margin-bottom: 3%;
+    border-bottom: 2px dotted white;
+}
+
+.sprts p{
+    padding: 0 50px;
+}
+
+.btn{
+    color: white;
+    border: none;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 40px 5px;
+}
+
+.btn:hover{
+    transition: all 0.8s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: rgb(26, 25, 25);
+    color: #f9ba2d;
+    font-family: 'Rubik', sans-serif;
+}
+.footer:hover{
+    color: white;
+    transition: all 1.5s ease;
+}
+
+.foot1{
+    margin-top: 1.8%;
+}
+
+/* ------- SPORTS SECTION ------- */
+
+
+.cafeBody{
+    background: linear-gradient(#f9ba2d, black);
+}
+
+#sports-activities{
+    max-width: 70%;
+    margin: auto;
+}
+
+.activities{
+    padding: 0 100PX;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 3% 0;
+    height: 700px;
+}
+
+.activities h1{
+    font-size: 3rem;
+}
+.activities p{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+#badminton:hover .overlay{
+    visibility: visible;
+}
+#badminton:hover .visible{
+    visibility: hidden;
+}
+#football:hover .overlay{
+    visibility: visible;
+}
+#football:hover .visible{
+    visibility: hidden;
+}
+#cricket:hover .overlay{
+    visibility: visible;
+}
+#cricket:hover .visible{
+    visibility: hidden;
+}
+#zumba:hover .overlay{
+    visibility: visible;
+}
+#zumba:hover .visible{
+    visibility: hidden;
+}
+
+.primary{
+    margin: 0 35%;
+    border-bottom: dashed white;
+}
+
+#badminton{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom right, rgb(23, 23, 150), white);
+    background: url(/img/badminton.jpg) no-repeat center center/cover;
+}
+#football{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom left, rgb(104, 255, 104), black);
+    background: url(/img/football1.jpg) no-repeat center center/cover;
+}
+
+#cricket{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to top right, rgb(133, 10, 10), white);
+    background: url(/img/cricket1.jpg) no-repeat center center/cover;
+}
+
+#zumba{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to top left, rgb(255, 255, 105), black);
+    background: url(/img/zumba.jpg) no-repeat center center/cover;
+}
+
+#zumba h1{
+    margin: 0 35.5%;
+    border-bottom: dashed white;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    visibility: hidden;
+    border-radius: 50px;
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 700px;
+    left: 10%;
+    right: 10%;
+    width: 70%;
+    margin: auto;
+}
+
+.overlay h1{
+    color: #f9ba2d;
+}
+.overlay p{
+    padding: 0 5%;
+}
+
+.visible{
+    font-size: 3rem;
+}
+
+
+/* ------- MEMBERSHIP/COACHING ------- */
+
+.member-body{
+    font-family: 'Mate SC', serif;
+    cursor: default;
+    background-color: rgb(212, 212, 212);
+}
+
+.container{
+    color: black;
+    padding-top: 2%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.table{
+    margin: 0 5%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    width: 90%;
+    text-align: center;
+}
+
+.row{
+    font-size: 30px;
+}
+
+caption{
+    font-size: 25px;
+}
+
+td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+table{
+    border: 3.5px solid black;
+    border-collapse: collapse;
+}
+
+hr{
+    background-color: black;
+    padding: 1px;
+    border: none;
+}
+
+.timing{
+    font-size: 15px;
+    text-align: left;
+}
+
+.timing a{
+    color: black;
+}
+
+.timing:hover a{
+    color: rgb(2, 2, 184);
+    transition: all .5s ease;
+}
+
+.heading{
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px dashed black;
+}
+.head1{
+    margin: auto;
+    width: 44%;
+}
+.head2{
+    margin: auto;
+    width: 22%;
+}
+.head3{
+    margin: auto;
+    margin-bottom: 2%;
+    width: 53%;
+}
+.head4{
+    margin: auto;
+    width: 24%;
+}
+
+caption{
+    text-align: left;
+    font-weight: bolder;
+}
+
+.caption{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    margin: auto;
+    margin-top: 0.6%;
+    width: 82.5%;
+}
+
+.tandc{
+    max-width: 90%;
+    margin: auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.tandc h2{
+    padding-right: 20px;
+    font-weight: bold;
+}
+.tandc p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rules{
+    margin: auto;
+    max-width: 90%;
+}
+
+.rules h3{
+    border-bottom: 2px solid black;
+    max-width: 14.5%;
+    margin-bottom: 10px;
+}
+
+
+/* ------- BOOKING ------- */
+
+.book-body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.logo2 img{
+    width: 80%;
+    height: 100%;
+}
+
+#contact{
+    margin-top: 1.8%;
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    color: white;
+    margin-left: 18%;
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-left: 33%; */
+}
+
+.upperSection{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    padding: 60px 0;
+    /* margin-left: 19%; */
+}
+
+.color{
+    color: #f9ba2d;
+}
+
+.lowerSection{
+    margin-top: 6%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    margin-right: 22%;
+}
+
+.width{
+    border: none;
+    background-color: rgb(49, 49, 49);
+    padding: 3px 0;
+    max-width: 8%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footertiming{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+
+/* ------- ------- */
+
+.body{
+    background-color: black;
+}
+
+.logo1 img{
+    width: 20%;
+    height: 20%;
+}
+
